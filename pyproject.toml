@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "llm-checker"
+name = "local-llm-checker"
 version = "0.1.0"
 description = "Find which local LLMs can run on your system"
 readme = "README.md"
@@ -38,11 +38,11 @@ dev = [
 ]
 
 [project.scripts]
-llm-checker = "llm_checker.main:app"
+local-llm-checker = "llm_checker.main:app"
 
 [project.urls]
-Homepage = "https://github.com/Manju-Chinnanagoudar/llm-checker"
-Issues = "https://github.com/Manju-Chinnanagoudar/llm-checker/issues"
+Homepage = "https://github.com/Manju-Chinnanagoudar/local-llm-checker"
+Issues = "https://github.com/Manju-Chinnanagoudar/local-llm-checker/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/llm_checker"]
