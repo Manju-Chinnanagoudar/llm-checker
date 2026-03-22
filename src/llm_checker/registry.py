@@ -1,3 +1,4 @@
+import json
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional
@@ -32,6 +33,7 @@ class ModelInfo:
 
 
 BUNDLED_REGISTRY = Path(__file__).parent / "data" / "models.yaml"
+CACHE_FILE = Path.home() / ".llm-checker" / "cache.json"
 
 
 def _parse_model(m: dict) -> ModelInfo:
@@ -61,10 +63,38 @@ def _parse_model(m: dict) -> ModelInfo:
     )
 
 
-def load_registry(path: Path = BUNDLED_REGISTRY) -> list[ModelInfo]:
+def _load_from_cache() -> list[ModelInfo] | None:
+    if not CACHE_FILE.exists():
+        return None
+    try:
+        data = json.loads(CACHE_FILE.read_text())
+        models = [_parse_model(m) for m in data.get("models", [])]
+        return models if models else None
+    except Exception:
+        # cache is corrupt or unreadable, fall through to bundled
+        return None
+
+
+def _load_from_yaml(path: Path) -> list[ModelInfo]:
     with open(path) as f:
         data = yaml.safe_load(f)
     return [_parse_model(m) for m in data["models"]]
+
+
+def load_registry(path: Path = BUNDLED_REGISTRY) -> list[ModelInfo]:
+    # prefer cache if available — it has more models from HF + Ollama
+    cached = _load_from_cache()
+    if cached:
+        return cached
+    # fall back to the bundled yaml (works offline, first run)
+    return _load_from_yaml(path)
+
+
+def get_registry_source() -> str:
+    """Returns where the registry was loaded from — useful for debug/display."""
+    if CACHE_FILE.exists():
+        return f"cache ({CACHE_FILE})"
+    return "bundled registry"
 
 
 def filter_by_tag(models: list[ModelInfo], tag: str) -> list[ModelInfo]:

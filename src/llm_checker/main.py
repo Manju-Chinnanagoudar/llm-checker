@@ -134,9 +134,12 @@ def list(
     from llm_checker.registry import load_registry, filter_by_tag
     from llm_checker.checker import check_all
 
+    from llm_checker.registry import get_registry_source
     with console.status("[cyan]Scanning your system...[/cyan]"):
         hw = get_hardware_profile()
         models = load_registry()
+    source = get_registry_source()
+    console.print(f"[dim]registry: {len(models)} models loaded from {source}[/dim]")
 
     if tag:
         models = filter_by_tag(models, tag)
@@ -179,9 +182,12 @@ def check(
     from llm_checker.registry import load_registry, search_by_name
     from llm_checker.checker import check_compatibility
 
+    from llm_checker.registry import get_registry_source
     with console.status("[cyan]Scanning your system...[/cyan]"):
         hw = get_hardware_profile()
         models = load_registry()
+    source = get_registry_source()
+    console.print(f"[dim]registry: {len(models)} models loaded from {source}[/dim]")
 
     matches = search_by_name(models, model)
 
