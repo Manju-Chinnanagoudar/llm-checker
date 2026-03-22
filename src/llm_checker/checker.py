@@ -25,11 +25,14 @@ def check_compatibility(model: ModelInfo, hw: HardwareProfile) -> CompatibilityR
     if hw.total_ram_gb < req.min_ram_gb:
         reasons.append(f"Needs {req.min_ram_gb} GB RAM, you have {hw.total_ram_gb} GB")
 
-    if req.requires_avx and not hw.has_avx:
-        reasons.append("Requires AVX — not supported by your CPU")
-
-    if req.requires_avx2 and not hw.has_avx2:
-        reasons.append("Requires AVX2 — not supported by your CPU")
+    # AVX/AVX2 are x86-only — Apple Silicon and ARM use NEON instead
+    # llama.cpp handles this automatically so we skip the check on non-x86
+    is_arm = not hw.has_avx and not hw.has_avx2 and hw.os == "macos"
+    if not is_arm:
+        if req.requires_avx and not hw.has_avx:
+            reasons.append("Requires AVX — not supported by your CPU")
+        if req.requires_avx2 and not hw.has_avx2:
+            reasons.append("Requires AVX2 — not supported by your CPU")
 
     if hw.free_disk_gb < req.min_disk_gb:
         reasons.append(f"Needs {req.min_disk_gb} GB disk, only {hw.free_disk_gb} GB free")

@@ -66,6 +66,11 @@ def _apple_gpus() -> list[GPUInfo]:
                         vram_gb = float(val.replace("gb", "").strip())
                     except ValueError:
                         pass
+        # Apple Silicon uses unified memory — if we couldn't parse VRAM
+        # from system_profiler, fall back to total RAM as an approximation
+        if vram_gb == 0.0:
+            import psutil
+            vram_gb = round(psutil.virtual_memory().total / (1024 ** 3), 2)
         return [GPUInfo(name="Apple Silicon GPU", vram_gb=vram_gb, backend="metal")]
     except Exception:
         return []
