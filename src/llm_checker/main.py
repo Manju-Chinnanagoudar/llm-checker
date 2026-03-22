@@ -18,7 +18,7 @@ console = Console()
 
 def version_callback(value: bool):
     if value:
-        rprint("[bold cyan]llm-checker[/bold cyan] version [green]0.1.3[/green]")
+        rprint("[bold cyan]llm-checker[/bold cyan] version [green]0.1.4[/green]")
         raise typer.Exit()
 
 
