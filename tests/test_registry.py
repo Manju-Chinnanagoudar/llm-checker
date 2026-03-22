@@ -42,5 +42,5 @@ def test_search_finds_qwen_with_partial(models):
 
 
 def test_search_returns_empty_for_garbage(models):
-    results = search_by_name(models, "zzzzzzzzznomatch")
+    results = search_by_name(models, "xqjvwzxqjvwz")
     assert len(results) == 0

@@ -89,7 +89,7 @@ def search_by_name(models: list[ModelInfo], query: str) -> list[ModelInfo]:
         list(candidates.keys()),
         scorer=fuzz.partial_ratio,
         limit=10,
-        score_cutoff=50,
+        score_cutoff=60,
     )
 
     seen: set[str] = set()
