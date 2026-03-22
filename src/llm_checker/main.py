@@ -37,9 +37,9 @@ def main(
 def status_style(status: str) -> tuple[str, str]:
     """Returns (icon, color) for a given status."""
     return {
-        "compatible":   ("✅", "green"),
-        "degraded":     ("⚠️ ", "yellow"),
-        "incompatible": ("❌", "red"),
+        "compatible":  (">>", "green"),
+        "degraded":    ("!!", "yellow"),
+        "incompatible": ("xx", "red"),
     }.get(status, ("❓", "white"))
 
 
@@ -78,7 +78,7 @@ def print_results_table(results, title: str = "LLM Compatibility Results"):
         if r.status == "compatible":
             status_text = Text("Ready to run", style="green")
         elif r.status == "degraded":
-            status_text = Text("\n".join(f"⚡ {w}" for w in r.warnings), style="yellow")
+            status_text = Text("\n".join(f"! {w}" for w in r.warnings), style="yellow")
         else:
             status_text = Text("\n".join(f"✗ {x}" for x in r.reasons), style="red")
 
@@ -163,9 +163,9 @@ def list(
     incompatible = sum(1 for r in results if r.status == "incompatible")
 
     console.print(
-        f"\n[green]✅ {compatible} compatible[/green]  "
-        f"[yellow]⚠️  {degraded} degraded[/yellow]  "
-        f"[red]❌ {incompatible} incompatible[/red]\n"
+        f"\n[green]>> {compatible} compatible[/green]  "
+        f"[yellow]!! {degraded} degraded[/yellow]  "
+        f"[red]xx {incompatible} incompatible[/red]\n"
     )
 
 
@@ -222,7 +222,7 @@ def check(
     if result.warnings:
         console.print("\n[yellow][bold]Warnings:[/bold][/yellow]")
         for w in result.warnings:
-            console.print(f"  [yellow]⚡ {w}[/yellow]")
+            console.print(f"  [yellow]! {w}[/yellow]")
 
     if result.reasons:
         console.print("\n[red][bold]Blockers:[/bold][/red]")
@@ -252,16 +252,16 @@ def update_registry(
         source, count = pull_updates(force=force)
 
     if source == "remote_fresh":
-        console.print(f"[green]✅ Registry updated — {count} models fetched from remote.[/green]")
+        console.print(f"[green]Registry updated — {count} models fetched from remote.[/green]")
     elif source == "remote_cached":
         try:
             meta = json.loads(META_FILE.read_text())
             fetched_at = meta.get("fetched_at", "unknown")
             console.print(
-                f"[yellow]⚡ Using cached registry ({count} models, last updated {fetched_at}).[/yellow]\n"
+                f"[yellow]Using cached registry ({count} models, last updated {fetched_at}).[/yellow]\n"
                 f"[dim]Run with --force to refresh.[/dim]"
             )
         except Exception:
-            console.print(f"[yellow]⚡ Using cached registry ({count} models).[/yellow]")
+            console.print(f"[yellow]Using cached registry ({count} models).[/yellow]")
     else:
-        console.print("[yellow]⚠️  Could not reach remote. Using bundled registry.[/yellow]")
+        console.print("[yellow]Could not reach remote, using bundled registry.[/yellow]")
