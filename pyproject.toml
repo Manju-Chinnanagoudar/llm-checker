@@ -30,6 +30,11 @@ dependencies = [
   "rapidfuzz>=3.0",
 ]
 
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
 [project.scripts]
 llm-checker = "llm_checker.main:app"
 
