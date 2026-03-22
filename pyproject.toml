@@ -10,7 +10,7 @@ readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.9"
 authors = [
-  { name = "Your Name", email = "you@email.com" }
+  { name = "Manjunath S Chinnagoudar", email = "manju@example.com" }
 ]
 keywords = ["llm", "ai", "local-ai", "ollama", "hardware", "cli"]
 classifiers = [
@@ -34,8 +34,8 @@ dependencies = [
 llm-checker = "llm_checker.main:app"
 
 [project.urls]
-Homepage = "https://github.com/yourname/llm-checker"
-Issues = "https://github.com/yourname/llm-checker/issues"
+Homepage = "https://github.com/Manju-Chinnanagoudar/llm-checker"
+Issues = "https://github.com/Manju-Chinnanagoudar/llm-checker/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/llm_checker"]

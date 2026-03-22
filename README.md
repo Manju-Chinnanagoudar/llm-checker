@@ -24,7 +24,7 @@ llm-checker update
 
 ## Development
 ```bash
-git clone https://github.com/yourname/llm-checker
+git clone https://github.com/Manju-Chinnanagoudar/llm-checker
 cd llm-checker
 pip install -e .
 ```

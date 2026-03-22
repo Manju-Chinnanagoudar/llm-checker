@@ -234,12 +234,34 @@ def check(
         console.print(f"[dim]HuggingFace:  [/dim]  [bold cyan]https://huggingface.co/{target.huggingface_name}[/bold cyan]\n")
 
 
-@app.command()
-def update():
-    """Update the model registry from remote."""
-    console.print("[bold cyan]Updating model registry...[/bold cyan]")
-    console.print("[yellow]⚙  Remote registry update coming in next step[/yellow]")
-
-
 if __name__ == "__main__":
     app()
+
+@app.command(name="update")
+def update_registry(
+    force: bool = typer.Option(
+        False, "--force", "-f",
+        help="Force refresh even if cache is fresh.",
+    ),
+):
+    """Update the model registry from remote."""
+    from llm_checker.registry_updater import pull_updates, META_FILE
+    import json
+
+    with console.status("[cyan]Fetching latest model registry...[/cyan]"):
+        source, count = pull_updates(force=force)
+
+    if source == "remote_fresh":
+        console.print(f"[green]✅ Registry updated — {count} models fetched from remote.[/green]")
+    elif source == "remote_cached":
+        try:
+            meta = json.loads(META_FILE.read_text())
+            fetched_at = meta.get("fetched_at", "unknown")
+            console.print(
+                f"[yellow]⚡ Using cached registry ({count} models, last updated {fetched_at}).[/yellow]\n"
+                f"[dim]Run with --force to refresh.[/dim]"
+            )
+        except Exception:
+            console.print(f"[yellow]⚡ Using cached registry ({count} models).[/yellow]")
+    else:
+        console.print("[yellow]⚠️  Could not reach remote. Using bundled registry.[/yellow]")

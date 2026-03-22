@@ -1,0 +1,35 @@
+name: Update Model Registry
+
+on:
+  schedule:
+    - cron: "0 */8 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-registry:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install httpx pyyaml
+
+      - name: Run registry updater
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python scripts/update_registry.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "registry-bot"
+          git config user.email "bot@llm-checker"
+          git add registry/models.json
+          git diff --staged --quiet || git commit -m "chore: update model registry $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git push
