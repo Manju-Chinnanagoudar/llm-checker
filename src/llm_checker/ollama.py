@@ -1,12 +1,15 @@
+import os
 import httpx
 
-OLLAMA_URL = "http://localhost:11434"
+# respect OLLAMA_HOST if set, otherwise fall back to default
+# users can set this like: OLLAMA_HOST=http://localhost:11435 llm-checker list
+_default_host = "http://localhost:11434"
+OLLAMA_HOST = os.environ.get("OLLAMA_HOST", _default_host).rstrip("/")
 
 
-def get_installed_models() -> set[str]:
-    # returns empty set if ollama isn't running — that's fine
+def get_installed_models(host: str = OLLAMA_HOST) -> set[str]:
     try:
-        resp = httpx.get(f"{OLLAMA_URL}/api/tags", timeout=3)
+        resp = httpx.get(f"{host}/api/tags", timeout=3)
         resp.raise_for_status()
         models = resp.json().get("models", [])
         return {m["name"] for m in models}
@@ -14,9 +17,9 @@ def get_installed_models() -> set[str]:
         return set()
 
 
-def ollama_is_running() -> bool:
+def ollama_is_running(host: str = OLLAMA_HOST) -> bool:
     try:
-        httpx.get(f"{OLLAMA_URL}", timeout=2)
+        httpx.get(host, timeout=2)
         return True
     except Exception:
         return False

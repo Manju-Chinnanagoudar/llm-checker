@@ -131,6 +131,10 @@ def list(
         False, "--all", "-a",
         help="Show incompatible models too.",
     ),
+    ollama_host: str = typer.Option(
+        None, "--ollama-host",
+        help="Ollama host if not running on default port (e.g. http://localhost:11435)",
+    ),
 ):
     """List all LLMs compatible with your system."""
     from llm_checker.hardware import get_hardware_profile
@@ -141,7 +145,7 @@ def list(
     with console.status("[cyan]Scanning your system...[/cyan]"):
         hw = get_hardware_profile()
         models = load_registry()
-        installed = get_installed_models()
+        installed = get_installed_models(host=ollama_host) if ollama_host else get_installed_models()
 
     if installed:
         mark_installed(models, installed)
