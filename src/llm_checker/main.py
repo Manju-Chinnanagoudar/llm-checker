@@ -54,6 +54,7 @@ def print_results_table(results, title: str = "LLM Compatibility Results"):
 
     table.add_column("",        width=3)
     table.add_column("Model",   style="bold white",  min_width=35)
+    table.add_column("",        width=4)  # installed badge
     table.add_column("Tags",    style="dim white",   min_width=20)
     table.add_column("RAM",     justify="center",    width=8)
     table.add_column("Disk",    justify="center",    width=8)
@@ -82,9 +83,11 @@ def print_results_table(results, title: str = "LLM Compatibility Results"):
         else:
             status_text = Text("\n".join(f"✗ {x}" for x in r.reasons), style="red")
 
+        installed_badge = "[green]OK[/green]" if m.installed else ""
         table.add_row(
             icon,
             m.name,
+            installed_badge,
             tags_text,
             f"{req.min_ram_gb}GB",
             f"{req.min_disk_gb}GB",
@@ -131,13 +134,19 @@ def list(
 ):
     """List all LLMs compatible with your system."""
     from llm_checker.hardware import get_hardware_profile
-    from llm_checker.registry import load_registry, filter_by_tag
+    from llm_checker.registry import load_registry, filter_by_tag, mark_installed, get_registry_source
     from llm_checker.checker import check_all
+    from llm_checker.ollama import get_installed_models, ollama_is_running
 
-    from llm_checker.registry import get_registry_source
     with console.status("[cyan]Scanning your system...[/cyan]"):
         hw = get_hardware_profile()
         models = load_registry()
+        installed = get_installed_models()
+
+    if installed:
+        mark_installed(models, installed)
+        console.print(f"[dim]ollama: {len(installed)} models installed[/dim]")
+
     source = get_registry_source()
     console.print(f"[dim]registry: {len(models)} models loaded from {source}[/dim]")
 

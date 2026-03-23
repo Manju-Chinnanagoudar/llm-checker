@@ -30,6 +30,7 @@ class ModelInfo:
     backends: list[str]
     license: str
     verified: bool
+    installed: bool = False
 
 
 BUNDLED_REGISTRY = Path(__file__).parent / "data" / "models.yaml"
@@ -95,6 +96,14 @@ def get_registry_source() -> str:
     if CACHE_FILE.exists():
         return f"cache ({CACHE_FILE})"
     return "bundled registry"
+
+
+def mark_installed(models: list[ModelInfo], installed_names: set[str]) -> list[ModelInfo]:
+    # match by ollama_name — e.g. "llama3.1:8b" in the installed set
+    for m in models:
+        if m.ollama_name and m.ollama_name in installed_names:
+            m.installed = True
+    return models
 
 
 def filter_by_tag(models: list[ModelInfo], tag: str) -> list[ModelInfo]:
