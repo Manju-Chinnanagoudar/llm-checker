@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T03:01:48.753477+00:00",
+  "updated_at": "2026-10-31T13:58:26.526919+00:00",
   "count": 92,
   "models": [
     {
@@ -633,232 +633,8 @@
       "verified": true
     },
     {
-      "id": "clef-27b",
-      "name": "clef:27b",
-      "family": "clef",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 17.2,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": true,
-        "min_disk_gb": 14.9
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "ollama": "clef:27b"
-      },
-      "backends": [
-        "ollama"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "glm-5.3-flash",
-      "name": "glm-5.3-flash",
-      "family": "glm",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 4.0,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": false,
-        "min_disk_gb": 2.0
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "ollama": "glm-5.3-flash"
-      },
-      "backends": [
-        "ollama"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "mimo-v2.6-pro",
-      "name": "mimo-v2.6-pro",
-      "family": "mimo",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 4.0,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": false,
-        "min_disk_gb": 2.0
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "ollama": "mimo-v2.6-pro"
-      },
-      "backends": [
-        "ollama"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "beam",
-      "name": "beam",
-      "family": "beam",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 4.0,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": false,
-        "min_disk_gb": 2.0
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "ollama": "beam"
-      },
-      "backends": [
-        "ollama"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "gpt-oss-120b",
-      "name": "gpt-oss:120b",
-      "family": "gpt",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 73.0,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": true,
-        "min_disk_gb": 66.0
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "ollama": "gpt-oss:120b"
-      },
-      "backends": [
-        "ollama"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "minimax-m3",
-      "name": "minimax-m3",
-      "family": "minimax",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 4.0,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": false,
-        "min_disk_gb": 2.0
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "ollama": "minimax-m3"
-      },
-      "backends": [
-        "ollama"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "kimi-k2.7-code",
-      "name": "kimi-k2.7-code",
-      "family": "kimi",
-      "tags": [
-        "coding"
-      ],
-      "requirements": {
-        "min_ram_gb": 4.0,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": false,
-        "min_disk_gb": 2.0
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "ollama": "kimi-k2.7-code"
-      },
-      "backends": [
-        "ollama"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "mistral-large-4",
-      "name": "mistral-large-4",
-      "family": "mistral",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 4.0,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": false,
-        "min_disk_gb": 2.0
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "ollama": "mistral-large-4"
-      },
-      "backends": [
-        "ollama"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "kimi-k2.6",
-      "name": "kimi-k2.6",
+      "id": "kimi-k3",
+      "name": "kimi-k3",
       "family": "kimi",
       "tags": [
         "general"
@@ -876,175 +652,7 @@
         "gpu_tokens_per_sec": 0
       },
       "sources": {
-        "ollama": "kimi-k2.6"
-      },
-      "backends": [
-        "ollama"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "gemma4-31b",
-      "name": "gemma4:31b",
-      "family": "gemma4",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 19.6,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": true,
-        "min_disk_gb": 17.1
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "ollama": "gemma4:31b"
-      },
-      "backends": [
-        "ollama"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "nemotron-3-ultra",
-      "name": "nemotron-3-ultra",
-      "family": "nemotron",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 4.0,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": false,
-        "min_disk_gb": 2.0
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "ollama": "nemotron-3-ultra"
-      },
-      "backends": [
-        "ollama"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "nemotron-3-nano-30b",
-      "name": "nemotron-3-nano:30b",
-      "family": "nemotron",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 19.0,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": true,
-        "min_disk_gb": 16.5
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "ollama": "nemotron-3-nano:30b"
-      },
-      "backends": [
-        "ollama"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "gpt-oss-20b",
-      "name": "gpt-oss:20b",
-      "family": "gpt",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 13.0,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": true,
-        "min_disk_gb": 11.0
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "ollama": "gpt-oss:20b"
-      },
-      "backends": [
-        "ollama"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "deepseek-v4.1-flash",
-      "name": "deepseek-v4.1-flash",
-      "family": "deepseek",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 4.0,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": false,
-        "min_disk_gb": 2.0
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "ollama": "deepseek-v4.1-flash"
-      },
-      "backends": [
-        "ollama"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "minimax-m2.7",
-      "name": "minimax-m2.7",
-      "family": "minimax",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 4.0,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": false,
-        "min_disk_gb": 2.0
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "ollama": "minimax-m2.7"
+        "ollama": "kimi-k3"
       },
       "backends": [
         "ollama"
@@ -1081,9 +689,37 @@
       "verified": false
     },
     {
-      "id": "kimi-k3",
-      "name": "kimi-k3",
-      "family": "kimi",
+      "id": "gpt-oss-120b",
+      "name": "gpt-oss:120b",
+      "family": "gpt",
+      "tags": [
+        "general"
+      ],
+      "requirements": {
+        "min_ram_gb": 73.0,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": true,
+        "min_disk_gb": 66.0
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "ollama": "gpt-oss:120b"
+      },
+      "backends": [
+        "ollama"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "minimax-m2.7",
+      "name": "minimax-m2.7",
+      "family": "minimax",
       "tags": [
         "general"
       ],
@@ -1100,7 +736,63 @@
         "gpu_tokens_per_sec": 0
       },
       "sources": {
-        "ollama": "kimi-k3"
+        "ollama": "minimax-m2.7"
+      },
+      "backends": [
+        "ollama"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "minimax-m3.1-flash",
+      "name": "minimax-m3.1-flash",
+      "family": "minimax",
+      "tags": [
+        "general"
+      ],
+      "requirements": {
+        "min_ram_gb": 4.0,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": false,
+        "min_disk_gb": 2.0
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "ollama": "minimax-m3.1-flash"
+      },
+      "backends": [
+        "ollama"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "mistral-large-4",
+      "name": "mistral-large-4",
+      "family": "mistral",
+      "tags": [
+        "general"
+      ],
+      "requirements": {
+        "min_ram_gb": 4.0,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": false,
+        "min_disk_gb": 2.0
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "ollama": "mistral-large-4"
       },
       "backends": [
         "ollama"
@@ -1137,9 +829,9 @@
       "verified": false
     },
     {
-      "id": "muse-spark-open",
-      "name": "muse-spark-open",
-      "family": "muse",
+      "id": "beam",
+      "name": "beam",
+      "family": "beam",
       "tags": [
         "general"
       ],
@@ -1156,7 +848,343 @@
         "gpu_tokens_per_sec": 0
       },
       "sources": {
-        "ollama": "muse-spark-open"
+        "ollama": "beam"
+      },
+      "backends": [
+        "ollama"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "nemotron-3-nano-30b",
+      "name": "nemotron-3-nano:30b",
+      "family": "nemotron",
+      "tags": [
+        "general"
+      ],
+      "requirements": {
+        "min_ram_gb": 19.0,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": true,
+        "min_disk_gb": 16.5
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "ollama": "nemotron-3-nano:30b"
+      },
+      "backends": [
+        "ollama"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "glm-5.3-flash",
+      "name": "glm-5.3-flash",
+      "family": "glm",
+      "tags": [
+        "general"
+      ],
+      "requirements": {
+        "min_ram_gb": 4.0,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": false,
+        "min_disk_gb": 2.0
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "ollama": "glm-5.3-flash"
+      },
+      "backends": [
+        "ollama"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "kimi-k2.6",
+      "name": "kimi-k2.6",
+      "family": "kimi",
+      "tags": [
+        "general"
+      ],
+      "requirements": {
+        "min_ram_gb": 4.0,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": false,
+        "min_disk_gb": 2.0
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "ollama": "kimi-k2.6"
+      },
+      "backends": [
+        "ollama"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "kimi-k2.7-code",
+      "name": "kimi-k2.7-code",
+      "family": "kimi",
+      "tags": [
+        "coding"
+      ],
+      "requirements": {
+        "min_ram_gb": 4.0,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": false,
+        "min_disk_gb": 2.0
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "ollama": "kimi-k2.7-code"
+      },
+      "backends": [
+        "ollama"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "nemotron-3-super",
+      "name": "nemotron-3-super",
+      "family": "nemotron",
+      "tags": [
+        "general"
+      ],
+      "requirements": {
+        "min_ram_gb": 4.0,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": false,
+        "min_disk_gb": 2.0
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "ollama": "nemotron-3-super"
+      },
+      "backends": [
+        "ollama"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "nemotron-3-ultra",
+      "name": "nemotron-3-ultra",
+      "family": "nemotron",
+      "tags": [
+        "general"
+      ],
+      "requirements": {
+        "min_ram_gb": 4.0,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": false,
+        "min_disk_gb": 2.0
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "ollama": "nemotron-3-ultra"
+      },
+      "backends": [
+        "ollama"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "mimo-v2.6-flash",
+      "name": "mimo-v2.6-flash",
+      "family": "mimo",
+      "tags": [
+        "general"
+      ],
+      "requirements": {
+        "min_ram_gb": 4.0,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": false,
+        "min_disk_gb": 2.0
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "ollama": "mimo-v2.6-flash"
+      },
+      "backends": [
+        "ollama"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "deepseek-v4.1-flash",
+      "name": "deepseek-v4.1-flash",
+      "family": "deepseek",
+      "tags": [
+        "general"
+      ],
+      "requirements": {
+        "min_ram_gb": 4.0,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": false,
+        "min_disk_gb": 2.0
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "ollama": "deepseek-v4.1-flash"
+      },
+      "backends": [
+        "ollama"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "deepseek-v4.1-flash-1017",
+      "name": "deepseek-v4.1-flash:1017",
+      "family": "deepseek",
+      "tags": [
+        "general"
+      ],
+      "requirements": {
+        "min_ram_gb": 4.0,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": false,
+        "min_disk_gb": 2.0
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "ollama": "deepseek-v4.1-flash:1017"
+      },
+      "backends": [
+        "ollama"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "gemma4-31b",
+      "name": "gemma4:31b",
+      "family": "gemma4",
+      "tags": [
+        "general"
+      ],
+      "requirements": {
+        "min_ram_gb": 19.6,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": true,
+        "min_disk_gb": 17.1
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "ollama": "gemma4:31b"
+      },
+      "backends": [
+        "ollama"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "minimax-m3",
+      "name": "minimax-m3",
+      "family": "minimax",
+      "tags": [
+        "general"
+      ],
+      "requirements": {
+        "min_ram_gb": 4.0,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": false,
+        "min_disk_gb": 2.0
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "ollama": "minimax-m3"
+      },
+      "backends": [
+        "ollama"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "mimo-v2.6-pro",
+      "name": "mimo-v2.6-pro",
+      "family": "mimo",
+      "tags": [
+        "general"
+      ],
+      "requirements": {
+        "min_ram_gb": 4.0,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": false,
+        "min_disk_gb": 2.0
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "ollama": "mimo-v2.6-pro"
       },
       "backends": [
         "ollama"
@@ -1221,26 +1249,26 @@
       "verified": false
     },
     {
-      "id": "deepseek-v4.1-flash-1017",
-      "name": "deepseek-v4.1-flash:1017",
-      "family": "deepseek",
+      "id": "gpt-oss-20b",
+      "name": "gpt-oss:20b",
+      "family": "gpt",
       "tags": [
         "general"
       ],
       "requirements": {
-        "min_ram_gb": 4.0,
+        "min_ram_gb": 13.0,
         "min_vram_gb": 0,
         "recommended_vram_gb": 0,
         "requires_avx": true,
-        "requires_avx2": false,
-        "min_disk_gb": 2.0
+        "requires_avx2": true,
+        "min_disk_gb": 11.0
       },
       "performance": {
         "cpu_tokens_per_sec": 10,
         "gpu_tokens_per_sec": 0
       },
       "sources": {
-        "ollama": "deepseek-v4.1-flash:1017"
+        "ollama": "gpt-oss:20b"
       },
       "backends": [
         "ollama"
@@ -1249,26 +1277,26 @@
       "verified": false
     },
     {
-      "id": "minimax-m3.1-flash",
-      "name": "minimax-m3.1-flash",
-      "family": "minimax",
+      "id": "clef-27b",
+      "name": "clef:27b",
+      "family": "clef",
       "tags": [
         "general"
       ],
       "requirements": {
-        "min_ram_gb": 4.0,
+        "min_ram_gb": 17.2,
         "min_vram_gb": 0,
         "recommended_vram_gb": 0,
         "requires_avx": true,
-        "requires_avx2": false,
-        "min_disk_gb": 2.0
+        "requires_avx2": true,
+        "min_disk_gb": 14.9
       },
       "performance": {
         "cpu_tokens_per_sec": 10,
         "gpu_tokens_per_sec": 0
       },
       "sources": {
-        "ollama": "minimax-m3.1-flash"
+        "ollama": "clef:27b"
       },
       "backends": [
         "ollama"
@@ -1277,9 +1305,9 @@
       "verified": false
     },
     {
-      "id": "mimo-v2.6-flash",
-      "name": "mimo-v2.6-flash",
-      "family": "mimo",
+      "id": "muse-spark-open",
+      "name": "muse-spark-open",
+      "family": "muse",
       "tags": [
         "general"
       ],
@@ -1296,35 +1324,7 @@
         "gpu_tokens_per_sec": 0
       },
       "sources": {
-        "ollama": "mimo-v2.6-flash"
-      },
-      "backends": [
-        "ollama"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "nemotron-3-super",
-      "name": "nemotron-3-super",
-      "family": "nemotron",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 4.0,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": false,
-        "min_disk_gb": 2.0
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "ollama": "nemotron-3-super"
+        "ollama": "muse-spark-open"
       },
       "backends": [
         "ollama"
@@ -1478,35 +1478,6 @@
       "verified": false
     },
     {
-      "id": "locate-anything.cpp-gguf",
-      "name": "locate-anything.cpp-gguf",
-      "family": "mudler",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 4.0,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": false,
-        "min_disk_gb": 2.0
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "huggingface": "mudler/locate-anything.cpp-gguf"
-      },
-      "backends": [
-        "llama.cpp",
-        "lm-studio"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
       "id": "ornith-1.5-35b-a3b-gguf",
       "name": "Ornith-1.5-35B-A3B-GGUF",
       "family": "ornith-ai",
@@ -1527,6 +1498,35 @@
       },
       "sources": {
         "huggingface": "ornith-ai/Ornith-1.5-35B-A3B-GGUF"
+      },
+      "backends": [
+        "llama.cpp",
+        "lm-studio"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "locate-anything.cpp-gguf",
+      "name": "locate-anything.cpp-gguf",
+      "family": "mudler",
+      "tags": [
+        "general"
+      ],
+      "requirements": {
+        "min_ram_gb": 4.0,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": false,
+        "min_disk_gb": 2.0
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "huggingface": "mudler/locate-anything.cpp-gguf"
       },
       "backends": [
         "llama.cpp",
@@ -1797,26 +1797,55 @@
       "verified": false
     },
     {
-      "id": "nemotron-3.5-asr-streaming-0.6b-gguf",
-      "name": "nemotron-3.5-asr-streaming-0.6b-gguf",
-      "family": "handy-computer",
+      "id": "ace-step-1.5-gguf",
+      "name": "ACE-Step-1.5-GGUF",
+      "family": "serveurperso",
       "tags": [
         "general"
       ],
       "requirements": {
-        "min_ram_gb": 1.4,
+        "min_ram_gb": 4.0,
         "min_vram_gb": 0,
         "recommended_vram_gb": 0,
         "requires_avx": true,
         "requires_avx2": false,
-        "min_disk_gb": 0.5
+        "min_disk_gb": 2.0
       },
       "performance": {
         "cpu_tokens_per_sec": 10,
         "gpu_tokens_per_sec": 0
       },
       "sources": {
-        "huggingface": "handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf"
+        "huggingface": "Serveurperso/ACE-Step-1.5-GGUF"
+      },
+      "backends": [
+        "llama.cpp",
+        "lm-studio"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "huihui-qwen3.6-35b-a3b-abliterated-mtp-gguf",
+      "name": "Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF",
+      "family": "huihui-ai",
+      "tags": [
+        "general"
+      ],
+      "requirements": {
+        "min_ram_gb": 22.0,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": true,
+        "min_disk_gb": 19.2
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "huggingface": "huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF"
       },
       "backends": [
         "llama.cpp",
@@ -1855,9 +1884,38 @@
       "verified": false
     },
     {
-      "id": "ace-step-1.5-gguf",
-      "name": "ACE-Step-1.5-GGUF",
-      "family": "serveurperso",
+      "id": "nemotron-3.5-asr-streaming-0.6b-gguf",
+      "name": "nemotron-3.5-asr-streaming-0.6b-gguf",
+      "family": "handy-computer",
+      "tags": [
+        "general"
+      ],
+      "requirements": {
+        "min_ram_gb": 1.4,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": false,
+        "min_disk_gb": 0.5
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "huggingface": "handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf"
+      },
+      "backends": [
+        "llama.cpp",
+        "lm-studio"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "deepseek-v4.1-flash-1017-gsq-rco-gguf",
+      "name": "DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "family": "ista-daslab",
       "tags": [
         "general"
       ],
@@ -1874,7 +1932,7 @@
         "gpu_tokens_per_sec": 0
       },
       "sources": {
-        "huggingface": "Serveurperso/ACE-Step-1.5-GGUF"
+        "huggingface": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF"
       },
       "backends": [
         "llama.cpp",
@@ -1884,55 +1942,26 @@
       "verified": false
     },
     {
-      "id": "ternary-bonsai-2-27b-gguf",
-      "name": "Ternary-Bonsai-2-27B-gguf",
-      "family": "prism-ml",
+      "id": "gemma-4-12b-it-gguf",
+      "name": "gemma-4-12b-it-GGUF",
+      "family": "unsloth",
       "tags": [
         "general"
       ],
       "requirements": {
-        "min_ram_gb": 17.2,
+        "min_ram_gb": 8.2,
         "min_vram_gb": 0,
         "recommended_vram_gb": 0,
         "requires_avx": true,
         "requires_avx2": true,
-        "min_disk_gb": 14.9
+        "min_disk_gb": 6.6
       },
       "performance": {
         "cpu_tokens_per_sec": 10,
         "gpu_tokens_per_sec": 0
       },
       "sources": {
-        "huggingface": "prism-ml/Ternary-Bonsai-2-27B-gguf"
-      },
-      "backends": [
-        "llama.cpp",
-        "lm-studio"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "huihui-qwen3.6-35b-a3b-abliterated-mtp-gguf",
-      "name": "Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF",
-      "family": "huihui-ai",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 22.0,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": true,
-        "min_disk_gb": 19.2
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "huggingface": "huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF"
+        "huggingface": "unsloth/gemma-4-12b-it-GGUF"
       },
       "backends": [
         "llama.cpp",
@@ -2000,55 +2029,26 @@
       "verified": false
     },
     {
-      "id": "gemma-4-12b-it-gguf",
-      "name": "gemma-4-12b-it-GGUF",
-      "family": "unsloth",
+      "id": "ternary-bonsai-2-27b-gguf",
+      "name": "Ternary-Bonsai-2-27B-gguf",
+      "family": "prism-ml",
       "tags": [
         "general"
       ],
       "requirements": {
-        "min_ram_gb": 8.2,
+        "min_ram_gb": 17.2,
         "min_vram_gb": 0,
         "recommended_vram_gb": 0,
         "requires_avx": true,
         "requires_avx2": true,
-        "min_disk_gb": 6.6
+        "min_disk_gb": 14.9
       },
       "performance": {
         "cpu_tokens_per_sec": 10,
         "gpu_tokens_per_sec": 0
       },
       "sources": {
-        "huggingface": "unsloth/gemma-4-12b-it-GGUF"
-      },
-      "backends": [
-        "llama.cpp",
-        "lm-studio"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "deepseek-v4.1-flash-1017-gsq-rco-gguf",
-      "name": "DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-      "family": "ista-daslab",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 4.0,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": false,
-        "min_disk_gb": 2.0
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "huggingface": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF"
+        "huggingface": "prism-ml/Ternary-Bonsai-2-27B-gguf"
       },
       "backends": [
         "llama.cpp",
@@ -2087,26 +2087,26 @@
       "verified": false
     },
     {
-      "id": "qwen3.8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp-gguf",
-      "name": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-      "family": "davidau",
+      "id": "qwen-image-2.1-gguf",
+      "name": "Qwen-Image-2.1-GGUF",
+      "family": "unsloth",
       "tags": [
-        "coding"
+        "general"
       ],
       "requirements": {
-        "min_ram_gb": 17.2,
+        "min_ram_gb": 4.0,
         "min_vram_gb": 0,
         "recommended_vram_gb": 0,
         "requires_avx": true,
-        "requires_avx2": true,
-        "min_disk_gb": 14.9
+        "requires_avx2": false,
+        "min_disk_gb": 2.0
       },
       "performance": {
         "cpu_tokens_per_sec": 10,
         "gpu_tokens_per_sec": 0
       },
       "sources": {
-        "huggingface": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF"
+        "huggingface": "unsloth/Qwen-Image-2.1-GGUF"
       },
       "backends": [
         "llama.cpp",
@@ -2136,35 +2136,6 @@
       },
       "sources": {
         "huggingface": "mradermacher/Ornith-1.5-9B-uncensored-GGUF"
-      },
-      "backends": [
-        "llama.cpp",
-        "lm-studio"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "qwen-image-2.1-gguf",
-      "name": "Qwen-Image-2.1-GGUF",
-      "family": "unsloth",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 4.0,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": false,
-        "min_disk_gb": 2.0
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "huggingface": "unsloth/Qwen-Image-2.1-GGUF"
       },
       "backends": [
         "llama.cpp",
@@ -2261,6 +2232,35 @@
       "verified": false
     },
     {
+      "id": "qwen3.8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp-gguf",
+      "name": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "family": "davidau",
+      "tags": [
+        "coding"
+      ],
+      "requirements": {
+        "min_ram_gb": 17.2,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": true,
+        "min_disk_gb": 14.9
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "huggingface": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF"
+      },
+      "backends": [
+        "llama.cpp",
+        "lm-studio"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
       "id": "qwen3.6-35b-a3b-mtp-gguf",
       "name": "Qwen3.6-35B-A3B-MTP-GGUF",
       "family": "unsloth",
@@ -2319,55 +2319,26 @@
       "verified": false
     },
     {
-      "id": "dirk-qwen3.8-27b-gguf",
-      "name": "Dirk-Qwen3.8-27B-GGUF",
-      "family": "peculiar-ragdoll",
+      "id": "qwen3-vl-8b-instruct-gguf",
+      "name": "Qwen3-VL-8B-Instruct-GGUF",
+      "family": "qwen",
       "tags": [
-        "general"
+        "vision"
       ],
       "requirements": {
-        "min_ram_gb": 17.2,
+        "min_ram_gb": 5.8,
         "min_vram_gb": 0,
         "recommended_vram_gb": 0,
         "requires_avx": true,
         "requires_avx2": true,
-        "min_disk_gb": 14.9
+        "min_disk_gb": 4.4
       },
       "performance": {
         "cpu_tokens_per_sec": 10,
         "gpu_tokens_per_sec": 0
       },
       "sources": {
-        "huggingface": "peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF"
-      },
-      "backends": [
-        "llama.cpp",
-        "lm-studio"
-      ],
-      "license": "unknown",
-      "verified": false
-    },
-    {
-      "id": "laguna-xs-2.1-apex-gguf",
-      "name": "Laguna-XS-2.1-APEX-GGUF",
-      "family": "mudler",
-      "tags": [
-        "general"
-      ],
-      "requirements": {
-        "min_ram_gb": 4.0,
-        "min_vram_gb": 0,
-        "recommended_vram_gb": 0,
-        "requires_avx": true,
-        "requires_avx2": false,
-        "min_disk_gb": 2.0
-      },
-      "performance": {
-        "cpu_tokens_per_sec": 10,
-        "gpu_tokens_per_sec": 0
-      },
-      "sources": {
-        "huggingface": "mudler/Laguna-XS-2.1-APEX-GGUF"
+        "huggingface": "Qwen/Qwen3-VL-8B-Instruct-GGUF"
       },
       "backends": [
         "llama.cpp",
@@ -2406,26 +2377,55 @@
       "verified": false
     },
     {
-      "id": "qwen3-vl-8b-instruct-gguf",
-      "name": "Qwen3-VL-8B-Instruct-GGUF",
-      "family": "qwen",
+      "id": "dirk-qwen3.8-27b-gguf",
+      "name": "Dirk-Qwen3.8-27B-GGUF",
+      "family": "peculiar-ragdoll",
       "tags": [
-        "vision"
+        "general"
       ],
       "requirements": {
-        "min_ram_gb": 5.8,
+        "min_ram_gb": 17.2,
         "min_vram_gb": 0,
         "recommended_vram_gb": 0,
         "requires_avx": true,
         "requires_avx2": true,
-        "min_disk_gb": 4.4
+        "min_disk_gb": 14.9
       },
       "performance": {
         "cpu_tokens_per_sec": 10,
         "gpu_tokens_per_sec": 0
       },
       "sources": {
-        "huggingface": "Qwen/Qwen3-VL-8B-Instruct-GGUF"
+        "huggingface": "peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF"
+      },
+      "backends": [
+        "llama.cpp",
+        "lm-studio"
+      ],
+      "license": "unknown",
+      "verified": false
+    },
+    {
+      "id": "qwen3.5-4b-gguf",
+      "name": "Qwen3.5-4B-GGUF",
+      "family": "unsloth",
+      "tags": [
+        "general"
+      ],
+      "requirements": {
+        "min_ram_gb": 3.4,
+        "min_vram_gb": 0,
+        "recommended_vram_gb": 0,
+        "requires_avx": true,
+        "requires_avx2": false,
+        "min_disk_gb": 2.2
+      },
+      "performance": {
+        "cpu_tokens_per_sec": 10,
+        "gpu_tokens_per_sec": 0
+      },
+      "sources": {
+        "huggingface": "unsloth/Qwen3.5-4B-GGUF"
       },
       "backends": [
         "llama.cpp",
@@ -2464,26 +2464,26 @@
       "verified": false
     },
     {
-      "id": "qwen3.5-4b-gguf",
-      "name": "Qwen3.5-4B-GGUF",
-      "family": "unsloth",
+      "id": "deepseek-v4.1-flash-gguf",
+      "name": "deepseek-v4.1-flash-gguf",
+      "family": "antirez",
       "tags": [
         "general"
       ],
       "requirements": {
-        "min_ram_gb": 3.4,
+        "min_ram_gb": 4.0,
         "min_vram_gb": 0,
         "recommended_vram_gb": 0,
         "requires_avx": true,
         "requires_avx2": false,
-        "min_disk_gb": 2.2
+        "min_disk_gb": 2.0
       },
       "performance": {
         "cpu_tokens_per_sec": 10,
         "gpu_tokens_per_sec": 0
       },
       "sources": {
-        "huggingface": "unsloth/Qwen3.5-4B-GGUF"
+        "huggingface": "antirez/deepseek-v4.1-flash-gguf"
       },
       "backends": [
         "llama.cpp",
@@ -2551,26 +2551,26 @@
       "verified": false
     },
     {
-      "id": "qwen3.8-35b-a3b-distill-gguf",
-      "name": "Qwen3.8-35B-A3B-Distill-GGUF",
-      "family": "empero-ai",
+      "id": "laguna-xs-2.1-apex-gguf",
+      "name": "Laguna-XS-2.1-APEX-GGUF",
+      "family": "mudler",
       "tags": [
         "general"
       ],
       "requirements": {
-        "min_ram_gb": 22.0,
+        "min_ram_gb": 4.0,
         "min_vram_gb": 0,
         "recommended_vram_gb": 0,
         "requires_avx": true,
-        "requires_avx2": true,
-        "min_disk_gb": 19.2
+        "requires_avx2": false,
+        "min_disk_gb": 2.0
       },
       "performance": {
         "cpu_tokens_per_sec": 10,
         "gpu_tokens_per_sec": 0
       },
       "sources": {
-        "huggingface": "empero-ai/Qwen3.8-35B-A3B-Distill-GGUF"
+        "huggingface": "mudler/Laguna-XS-2.1-APEX-GGUF"
       },
       "backends": [
         "llama.cpp",
@@ -2609,26 +2609,26 @@
       "verified": false
     },
     {
-      "id": "deepseek-v4.1-flash-gguf",
-      "name": "deepseek-v4.1-flash-gguf",
-      "family": "antirez",
+      "id": "qwen3.8-35b-a3b-distill-gguf",
+      "name": "Qwen3.8-35B-A3B-Distill-GGUF",
+      "family": "empero-ai",
       "tags": [
         "general"
       ],
       "requirements": {
-        "min_ram_gb": 4.0,
+        "min_ram_gb": 22.0,
         "min_vram_gb": 0,
         "recommended_vram_gb": 0,
         "requires_avx": true,
-        "requires_avx2": false,
-        "min_disk_gb": 2.0
+        "requires_avx2": true,
+        "min_disk_gb": 19.2
       },
       "performance": {
         "cpu_tokens_per_sec": 10,
         "gpu_tokens_per_sec": 0
       },
       "sources": {
-        "huggingface": "antirez/deepseek-v4.1-flash-gguf"
+        "huggingface": "empero-ai/Qwen3.8-35B-A3B-Distill-GGUF"
       },
       "backends": [
         "llama.cpp",
